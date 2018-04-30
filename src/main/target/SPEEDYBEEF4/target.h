@@ -23,8 +23,7 @@
 
 #define LED0_PIN                PB9
 
-#define USE_BEEPER
-#define BEEPER_PIN              PC13
+#define BEEPER                  PC13
 #define BEEPER_INVERTED
 
 #define ENABLE_DSHOT_DMAR       true
@@ -52,7 +51,6 @@
 
 #define USE_MAG
 #define USE_MAG_HMC5883
-#define USE_MAG_QMC5883
 
 // *************** Baro **************************
 #define USE_I2C
@@ -147,6 +145,8 @@
 
 // *************** activate/deactivate Bluetooth When disarmed/armed using PINIO_BOX *****************************
 #define PINIO1_PIN PB0
+#define BLUETOOTH_MSP_UART          SERIAL_PORT_UART5
+#define BLUETOOTH_MSP_BAUDRATE      BAUD_19200
 
-#define USABLE_TIMER_CHANNEL_COUNT 12
-#define USED_TIMERS             (TIM_N(1)|TIM_N(2)|TIM_N(4)|TIM_N(5)|TIM_N(8)|TIM_N(9))
+#define USABLE_TIMER_CHANNEL_COUNT 9
+#define USED_TIMERS             (TIM_N(1)|TIM_N(2)|TIM_N(4)|TIM_N(5)|TIM_N(8))
